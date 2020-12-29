@@ -37,6 +37,11 @@ public extension SourceCodeToken {
 }
 
 public struct SimpleSourceCodeToken: SourceCodeToken {
+    public init(type: SourceCodeTokenType, range: Range<String.Index>) {
+        self.type = type
+        self.range = range
+    }
+
 	
 	public let type: SourceCodeTokenType
 	
